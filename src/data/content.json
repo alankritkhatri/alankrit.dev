@@ -1,0 +1,101 @@
+{
+  "navLinks": [
+    { "label": "Home", "href": "#top" },
+    { "label": "Blog", "href": "#blog" }
+  ],
+  "profile": {
+    "name": "Alankrit Khatri",
+    "role": "Software Engineer I at Docstribe AI | Full Stack Developer",
+    "bio": "I love challenging tasks. I am motivated by interesting projects. I prefer quick iterations & prototype-driven work. Strong problem-solving abilities, clear communication, and a high-ownership, impact-driven mindset. 1200+ Github commits in past 1 year.",
+    "location": "Delhi, India",
+    "banner": {
+      "alt": "Map of Delhi",
+      "image": "/delhi-map.png"
+    }
+  },
+  "listening": {
+    "status": "Not Currently Listening 🎵",
+    "service": "Spotify",
+    "track": null
+  },
+  "blogPosts": [],
+  "oss": [
+    {
+      "name": "Synqjs",
+      "url": "https://www.npmjs.com/package/synqjs",
+      "stars": null
+    },
+    {
+      "name": "Supermemory.ai Contribution",
+      "url": "https://github.com/supermemoryai/supermemory",
+      "stars": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Keechu",
+      "description": "All in one Productivity tool to manage Tasks, Habits, Bookmarks, Calendars, Notes, Clipboard",
+      "url": "https://www.keechu.com",
+      "icon": "📋"
+    },
+    {
+      "name": "Synqjs",
+      "description": "Lightweight Redis-based messaging queue system - npm package with CLI support",
+      "url": "https://www.npmjs.com/package/synqjs",
+      "icon": "⚡"
+    }
+  ],
+  "work": [
+    {
+      "company": "Docstribe AI",
+      "description": "Healthcare SaaS platform - Software Engineer I",
+      "url": "https://docstribe.ai",
+      "logo": "D",
+      "logoColor": "#4a7cff",
+      "logoTextColor": "#ffffff"
+    }
+  ],
+  "social": [
+    { "label": "GitHub", "url": "https://github.com/alankrit" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/alankrit-khatri" },
+    { "label": "X", "url": "https://x.com/" },
+    { "label": "Email", "url": "mailto:alankrit.khatri7@gmail.com" }
+  ],
+  "contact": {
+    "email": "alankrit.khatri7@gmail.com",
+    "phone": "8527819152"
+  },
+  "skills": {
+    "languages": ["Python", "JavaScript", "SQL", "TypeScript", "Java"],
+    "backend": [
+      "FastAPI",
+      "Node.js",
+      "Flask",
+      "Express.js",
+      "Django",
+      "REST APIs"
+    ],
+    "frontend": ["React", "HTML/CSS", "Tailwind"],
+    "testing": ["JEST", "Unit & Integration testing"],
+    "genAI": ["OpenAI", "GPT API", "Gemini API"],
+    "databases": ["Redis", "MongoDB", "MySQL", "PostgreSQL"],
+    "cloud": ["AWS", "Google Cloud", "Docker", "Vercel", "Railway", "Firebase"],
+    "tools": ["Postman", "Git", "GitHub", "Cursor"],
+    "design": ["Figma", "Adobe Photoshop", "Canva"]
+  },
+  "education": [
+    {
+      "institution": "Vellore Institute of Technology",
+      "degree": "Master of Computer Applications - MCA",
+      "location": "Vellore, India",
+      "period": "2024 - 2025"
+    },
+    {
+      "institution": "Guru Gobind Singh Indraprastha University",
+      "degree": "Bachelor of Business Administration - BBA",
+      "grade": "8.51/10 CGPA",
+      "location": "Delhi, India",
+      "period": "2019 - 2022"
+    }
+  ]
+}

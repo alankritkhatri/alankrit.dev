@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(cat:*)",
+      "Bash(taskkill:*)",
+      "Bash(nul)",
+      "Bash(\"src\\App.css.tmp\")",
+      "Bash(move /Y \"src\\App.css.tmp\" \"src\\App.css\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
