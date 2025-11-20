@@ -275,6 +275,7 @@ const App = () => {
             src={profile.banner.image}
             alt={profile.banner.alt}
           />
+          <div></div>
         </div>
         <div className="flex justify-between items-center mb-8">
           <div className="listening">
