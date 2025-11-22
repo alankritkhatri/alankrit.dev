@@ -1,11 +1,8 @@
 {
-  "navLinks": [
-    { "label": "Home", "href": "#top" },
-    { "label": "Blog", "href": "#blog" }
-  ],
+  "navLinks": [{ "label": "Home", "href": "#top" }],
   "profile": {
     "name": "Alankrit Khatri",
-    "role": "Software Engineer I at Docstribe AI | Full Stack Developer",
+    "role": "Software Engineer I at Docstribe AI",
     "bio": "Hi im Alankrit.im a builder at ❤️. I love creative problems. I have Strong problem-solving abilities and a high-ownership, impact-driven mindset.1200+ Github commits in past 1 year. feel free to say hi to connect on my email",
     "location": "Delhi, India",
     "banner": {
@@ -59,7 +56,7 @@
     }
   ],
   "social": [
-    { "label": "GitHub", "url": "https://github.com/alankrit" },
+    { "label": "GitHub", "url": "https://github.com/alankritkhatri" },
     { "label": "LinkedIn", "url": "https://linkedin.com/in/alankrit-khatri" },
     { "label": "X", "url": "https://x.com/lilkeechu" },
     { "label": "Email", "url": "mailto:alankrit.khatri7@gmail.com" }

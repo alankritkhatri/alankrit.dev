@@ -16,7 +16,7 @@ body {
 .app-shell {
   position: relative;
   min-height: 100vh;
-  padding: 4rem clamp(1.25rem, 4vw, 4rem);
+  padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 4vw, 4rem);
   display: flex;
   justify-content: center;
 }
@@ -335,4 +335,106 @@ body {
   .listening {
     text-align: left;
   }
+}
+
+@media (max-width: 640px) {
+  .blog-row,
+  .oss-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  .row-spacer {
+    display: none;
+  }
+  .blog-date,
+  .oss-star {
+    font-size: 0.8rem;
+    color: #888;
+  }
+}
+
+/* Markdown Content */
+.markdown-content {
+  line-height: 1.6;
+  color: #d4d4d4;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.markdown-content p {
+  margin-bottom: 1.5em;
+}
+
+.markdown-content a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #666;
+  text-underline-offset: 2px;
+}
+
+.markdown-content a:hover {
+  text-decoration-color: #fff;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5em;
+}
+
+.markdown-content code {
+  background: #222;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.markdown-content pre {
+  background: #111;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+  border: 1px solid #333;
+}
+
+.markdown-content pre code {
+  background: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid #444;
+  margin: 0 0 1.5em 0;
+  padding-left: 1em;
+  color: #888;
+  font-style: italic;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.5em 0;
+}
+
+.markdown-content hr {
+  border: 0;
+  border-top: 1px dashed #333;
+  margin: 3em 0;
 }
