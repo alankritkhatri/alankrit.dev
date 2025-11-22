@@ -295,7 +295,7 @@ const Home = () => {
           />
           <div></div>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-8">
+        <div className="flex flex-row justify-between items-center mb-8">
           <div className="listening">
             {song?.isPlaying ? (
               <div className="flex flex-wrap gap-1">

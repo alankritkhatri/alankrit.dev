@@ -16,7 +16,7 @@ body {
 .app-shell {
   position: relative;
   min-height: 100vh;
-  padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 4vw, 4rem);
+  padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 4vw, 4rem);
   display: flex;
   justify-content: center;
 }
@@ -35,7 +35,7 @@ body {
 }
 .surface {
   width: min(720px, 100%);
-  padding: 2.5rem clamp(1.25rem, 3vw, 3rem) 3rem;
+  padding: 1.5rem clamp(1rem, 2vw, 2rem) 2rem;
   background: transparent;
 }
 .surface {
