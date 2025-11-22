@@ -6,7 +6,7 @@
   "profile": {
     "name": "Alankrit Khatri",
     "role": "Software Engineer I at Docstribe AI | Full Stack Developer",
-    "bio": "I love challenging tasks. I am motivated by interesting projects. I prefer quick iterations & prototype-driven work. Strong problem-solving abilities, clear communication, and a high-ownership, impact-driven mindset. 1200+ Github commits in past 1 year.",
+    "bio": "Hi im Alankrit.im a builder at ❤️. I love creative problems. I have Strong problem-solving abilities and a high-ownership, impact-driven mindset.1200+ Github commits in past 1 year. feel free to say hi to connect on my email",
     "location": "Delhi, India",
     "banner": {
       "alt": "Map of Delhi",
@@ -14,7 +14,7 @@
     }
   },
   "listening": {
-    "status": "Not Currently Listening 🎵",
+    "status": "Not Currently Listening 🎧",
     "service": "Spotify",
     "track": null
   },
@@ -36,13 +36,15 @@
       "name": "Keechu",
       "description": "All in one Productivity tool to manage Tasks, Habits, Bookmarks, Calendars, Notes, Clipboard",
       "url": "https://www.keechu.com",
-      "icon": "📋"
+      "icon": "/keechu-logo.png",
+      "isImage": true
     },
     {
       "name": "Synqjs",
       "description": "Lightweight Redis-based messaging queue system - npm package with CLI support",
       "url": "https://www.npmjs.com/package/synqjs",
-      "icon": "⚡"
+      "icon": "S",
+      "isDotFont": true
     }
   ],
   "work": [
@@ -50,15 +52,16 @@
       "company": "Docstribe AI",
       "description": "Healthcare SaaS platform - Software Engineer I",
       "url": "https://docstribe.ai",
-      "logo": "D",
-      "logoColor": "#4a7cff",
-      "logoTextColor": "#ffffff"
+      "logo": "/docstribe_ai_healthcare_logo.jpeg",
+      "isImage": true,
+      "logoColor": "#ffffff",
+      "logoTextColor": "#000000"
     }
   ],
   "social": [
     { "label": "GitHub", "url": "https://github.com/alankrit" },
     { "label": "LinkedIn", "url": "https://linkedin.com/in/alankrit-khatri" },
-    { "label": "X", "url": "https://x.com/" },
+    { "label": "X", "url": "https://x.com/lilkeechu" },
     { "label": "Email", "url": "mailto:alankrit.khatri7@gmail.com" }
   ],
   "contact": {

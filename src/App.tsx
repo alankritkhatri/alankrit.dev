@@ -1,12 +1,17 @@
 import { useState, type ReactNode } from "react";
 import "./App.css";
 import content from "./data/content.json";
+import { useSpotify } from "./hooks/useSpotify";
+import { FaSpotify } from "react-icons/fa";
 
 type Content = typeof content;
 type BlogPost = Content["blogPosts"][number];
 type Repo = Content["oss"][number];
-type Project = Content["projects"][number];
-type WorkItem = Content["work"][number];
+type Project = Content["projects"][number] & {
+  isImage?: boolean;
+  isDotFont?: boolean;
+};
+type WorkItem = Content["work"][number] & { isImage?: boolean };
 type NavLink = Content["navLinks"][number];
 type Social = Content["social"][number];
 
@@ -154,6 +159,8 @@ const getSocialIcon = (label: string) => {
       return <EmailIcon />;
     case "github":
       return <GitHubIcon />;
+    case "spotify":
+      return <FaSpotify />;
     default:
       return null;
   }
@@ -233,6 +240,8 @@ const App = () => {
     contact,
   } = content as Content;
 
+  const song = useSpotify();
+
   return (
     <div className="app-shell" id="top">
       <div className="halo halo-top" />
@@ -279,9 +288,34 @@ const App = () => {
         </div>
         <div className="flex justify-between items-center mb-8">
           <div className="listening">
-            <span className="muted text-200">{listening.status}</span>
-            {listening.track && <strong>{listening.track}</strong>}
-            <div className="spinner" aria-label="Loading"></div>
+            {song?.isPlaying ? (
+              <div className="flex gap-1">
+                <div className="flex items-center gap-2">
+                  <FaSpotify className="text-[#1DB954] size-4" />
+                  <span className="muted text-200">Listening to</span>
+                  <strong>
+                    <a
+                      href={song.songUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:underline text-white"
+                    >
+                      {song.title}
+                    </a>
+                  </strong>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="muted text-200">by {song.artist}</span>
+                  <div className="spinner" aria-label="Playing"></div>
+                </div>
+              </div>
+            ) : (
+              <>
+                <span className="muted text-200">{listening.status}</span>
+                {listening.track && <strong>{listening.track}</strong>}
+                <div className="spinner" aria-label="Loading"></div>
+              </>
+            )}
           </div>
           <div className="location-text !mb-0">
             in {profile.location} <span className="dot green" />
@@ -289,9 +323,10 @@ const App = () => {
         </div>
 
         <header className="profile relative">
-          <h1 className="mb-3">{profile.name}</h1>
-          <div className="flex flex-col gap-2 mb-6">
+          <h1 className="mb-1">{profile.name}</h1>
+          <div className="flex flex-wrap items-center gap-3 mb-6">
             <p className="eyebrow !mb-0 text-neutral-300">{profile.role}</p>
+            <span className="text-neutral-700 hidden sm:inline">•</span>
             <EmailDisplay email={contact.email} />
           </div>
           <p className="bio">{profile.bio}</p>
@@ -328,7 +363,25 @@ const App = () => {
             items={projects}
             render={(project: Project) => (
               <a href={project.url} className="project-card">
-                <div className="project-icon">{project.icon}</div>
+                <div className="project-icon">
+                  {project.isImage ? (
+                    <img
+                      src={project.icon}
+                      alt={project.name}
+                      className="w-full h-full object-contain rounded-md"
+                    />
+                  ) : (
+                    <span
+                      style={
+                        project.isDotFont
+                          ? { fontFamily: '"DotGothic16", sans-serif' }
+                          : {}
+                      }
+                    >
+                      {project.icon}
+                    </span>
+                  )}
+                </div>
                 <div>
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
@@ -350,7 +403,15 @@ const App = () => {
                     color: job.logoTextColor,
                   }}
                 >
-                  {job.logo}
+                  {job.isImage ? (
+                    <img
+                      src={job.logo}
+                      alt={job.company}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    job.logo
+                  )}
                 </div>
                 <div>
                   <h3>{job.company}</h3>
