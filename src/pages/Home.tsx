@@ -312,16 +312,20 @@ const Home = () => {
                     </a>
                   </strong>
                 </div>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center">
                   <span className="muted text-200">by {song.artist}</span>
-                  <div className="spinner" aria-label="Playing"></div>
+                  <span className="dancer" aria-label="Playing">
+                    🕺
+                  </span>
                 </div>
               </div>
             ) : (
               <>
                 <span className="muted text-200">{listening.status}</span>
                 {listening.track && <strong>{listening.track}</strong>}
-                <div className="spinner" aria-label="Loading"></div>
+                <span className="dancer" aria-label="Loading">
+                  🕺
+                </span>
               </>
             )}
           </div>

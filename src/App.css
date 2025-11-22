@@ -321,6 +321,27 @@ body {
   text-transform: lowercase;
 }
 
+.dancer {
+  display: inline-block;
+  margin-left: 0.5rem;
+  animation: dance 1s infinite;
+  font-style: normal;
+  vertical-align: middle;
+}
+
+@keyframes dance {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-2px) rotate(-10deg);
+  }
+  75% {
+    transform: translateY(-2px) rotate(10deg);
+  }
+}
+
 @media (max-width: 960px) {
   .rail {
     display: none;
