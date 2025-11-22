@@ -331,13 +331,6 @@ const Home = () => {
         </div>
 
         <header className="profile relative">
-          <div className="block sm:float-right w-32 h-32 sm:w-48 sm:h-48 mb-6 sm:ml-8 sm:-mt-4 sm:mb-4 mx-auto sm:mx-0">
-            <img
-              src="/2f9ac071-6066-4c04-9655-2d73a1667111-removebg-preview.png"
-              alt={profile.name}
-              className="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity"
-            />
-          </div>
           <h1 className="mb-1">{profile.name}</h1>
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <p className="eyebrow !mb-0 text-neutral-300">{profile.role}</p>
