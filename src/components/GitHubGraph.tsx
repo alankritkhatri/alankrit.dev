@@ -56,21 +56,20 @@ const GitHubGraph = () => {
         </h2>
       </div>
 
-      <div className="w-full flex justify-center github-graph overflow-hidden">
+      <div className="w-full flex justify-center">
         <ActivityCalendar
           data={data}
           theme={{
             dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
           }}
           colorScheme="dark"
-          blockSize={3.5}
+          blockSize={9}
           blockMargin={2}
           blockRadius={2}
           fontSize={10}
           showTotalCount={false}
           showColorLegend={false}
           showWeekdayLabels
-          style={{ width: "100%", height: "auto", maxWidth: "100%" }}
         />
       </div>
     </div>
