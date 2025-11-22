@@ -5,6 +5,7 @@ import { getPosts, type Post } from "../lib/posts";
 import { useSpotify } from "../hooks/useSpotify";
 import { FaSpotify } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import GitHubGraph from "../components/GitHubGraph";
 
 type Content = typeof content;
 type BlogPost = Content["blogPosts"][number];
@@ -387,6 +388,10 @@ const Home = () => {
               </a>
             )}
           />
+        </Section>
+
+        <Section title="Github Activity">
+          <GitHubGraph />
         </Section>
 
         <Section title="Projects">

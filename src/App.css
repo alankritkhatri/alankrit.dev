@@ -452,3 +452,10 @@ body {
   border-top: 1px dashed #333;
   margin: 3em 0;
 }
+
+.github-graph svg,
+.github-graph article {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
