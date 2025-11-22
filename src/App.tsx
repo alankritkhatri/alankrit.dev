@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./pages/Home";
 import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 };
