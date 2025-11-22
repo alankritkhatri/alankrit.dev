@@ -174,7 +174,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 2rem;
 }
 
@@ -349,24 +349,17 @@ body {
   .surface {
     padding: 2rem 1.3rem 3rem;
   }
-  .nav-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .listening {
     text-align: left;
   }
 }
 
 @media (max-width: 640px) {
-  .blog-row,
-  .oss-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
+  .banner {
+    height: 120px;
   }
-  .row-spacer {
-    display: none;
+  .banner-image {
+    transform: scale(1.25);
   }
   .blog-date,
   .oss-star {
