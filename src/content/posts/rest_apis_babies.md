@@ -4,12 +4,6 @@ date: "2025-12-29"
 description: "APIs explained like you are 2"
 ---
 
-
-Imagine you are in a restaurant and you order a dish…  
-You have probably heard this one before.
-
-So time for a real one.
-
 One thing to note before moving forward is that **everything on the internet** is formed of:
 
 - text  
