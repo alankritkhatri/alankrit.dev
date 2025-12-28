@@ -1,7 +1,7 @@
 ---
-title: "Rest APIs for Babies"
+title: "APIs for Babies"
 date: "2025-12-29"
-description: "Rest APIs explained like you are 2"
+description: "APIs explained like you are 2"
 ---
 
 
@@ -32,8 +32,6 @@ Let’s break down what you have actually done:
 
 So in technical terms, when you search on Google, you have **“hit an API with your search query”**, and you get a response in some form of **data**.
 
----
-![Cute API explanation](https://voyager.postman.com/illustration/diagram-what-is-an-api-postman-illustration.svg)
 
 ---
 ## What an API Does
@@ -52,3 +50,4 @@ But in most cases, the job of an API is just to:
 
 The inner logic or the magical aspect is mostly written in **separate files**.
 
+![Cute API explanation](https://voyager.postman.com/illustration/diagram-what-is-an-api-postman-illustration.svg)
