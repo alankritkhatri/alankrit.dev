@@ -1,5 +1,5 @@
 ---
-title: "APIs for Babies"
+title: "APIs Explained for Babies"
 date: "2025-12-29"
 description: "APIs explained like you are 2"
 ---
