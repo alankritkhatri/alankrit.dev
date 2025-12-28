@@ -48,6 +48,6 @@ But in most cases, the job of an API is just to:
 - take a request  
 - deliver a response  
 
-The inner logic or the magical aspect is mostly written in **separate files**.
+The inner logic or the magical aspect of how to figure out what to return is mostly written in **separate files**.
 
 ![Cute API explanation](https://voyager.postman.com/illustration/diagram-what-is-an-api-postman-illustration.svg)
