@@ -3,7 +3,7 @@
   "profile": {
     "name": "Alankrit Khatri",
     "role": "Software Engineer I at Docstribe AI",
-    "bio": "Hi I'm Alankrit.Im a a software engineer and Builder. I love creative problems. I have strong problem-solving abilities and a high-ownership, impact-driven mindset. Feel free to say hi to connect on my email.",
+    "bio": "Hi I'm Alankrit. Im a software engineer and Builder. I love creative problems. I have strong problem-solving abilities and a high-ownership, impact-driven mindset. Feel free to say hi to connect on my email.",
     "location": "Delhi, India",
     "banner": {
       "alt": "Map of Delhi",
@@ -48,7 +48,7 @@
     {
       "company": "Docstribe AI",
       "description": "Healthcare SaaS platform - Software Engineer I",
-      "url": "https://docstribe.ai",
+      "url": "https://docstribe.com",
       "logo": "/docstribe_ai_healthcare_logo.jpeg",
       "isImage": true,
       "logoColor": "#ffffff",

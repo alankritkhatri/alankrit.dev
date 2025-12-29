@@ -459,3 +459,29 @@ body {
   height: auto !important;
   max-width: 100% !important;
 }
+
+/* Open button - Apple style light blue */
+.open-button {
+  padding: 0.35rem 0.9rem;
+  background: #007aff;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 16px;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+.open-button:hover {
+  background: #0066d6;
+}
+
+/* OSS external link icon */
+.oss-external-link {
+  display: flex;
+  align-items: center;
+  color: #666;
+  transition: color 0.15s ease;
+}
+.oss-row:hover .oss-external-link {
+  color: #5e9eff;
+}

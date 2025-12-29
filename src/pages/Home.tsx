@@ -200,6 +200,23 @@ const CheckIcon = () => (
   </svg>
 );
 
+const ExternalLinkIcon = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M15 3h6v6" />
+    <path d="M10 14 21 3" />
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+  </svg>
+);
+
 const EmailDisplay = ({ email }: { email: string }) => {
   const [copied, setCopied] = useState(false);
 
@@ -367,7 +384,7 @@ const Home = () => {
             <SimpleList
               items={blogPosts}
               render={(post: BlogPost) => (
-                <a href={post.url} className="blog-row">
+                <a href={post.url} className="blog-row" target="_blank" rel="noreferrer">
                   <span className="blog-title">{post.title}</span>
                   <span className="row-spacer" />
                   <time className="blog-date">{formatDate(post.date)}</time>
@@ -377,14 +394,16 @@ const Home = () => {
           )}
         </Section>
 
-        <Section title="OSS">
+        <Section title="Open Source">
           <SimpleList
             items={oss}
             render={(repo: Repo) => (
-              <a href={repo.url} className="oss-row">
+              <a href={repo.url} className="oss-row" target="_blank" rel="noreferrer">
                 <span className="oss-name">{repo.name}</span>
                 <span className="row-spacer" />
-                <span className="oss-star">★</span>
+                <span className="oss-external-link">
+                  <ExternalLinkIcon />
+                </span>
               </a>
             )}
           />
@@ -398,7 +417,7 @@ const Home = () => {
           <CardRow
             items={projects}
             render={(project: Project) => (
-              <a href={project.url} className="project-card">
+              <a href={project.url} className="project-card" target="_blank" rel="noreferrer">
                 <div className="project-icon">
                   {project.isImage ? (
                     <img
@@ -418,10 +437,11 @@ const Home = () => {
                     </span>
                   )}
                 </div>
-                <div>
+                <div className="flex-1">
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
                 </div>
+                <span className="open-button">Open</span>
               </a>
             )}
           />
@@ -431,7 +451,7 @@ const Home = () => {
           <CardRow
             items={work}
             render={(job: WorkItem) => (
-              <a href={job.url} className="work-card">
+              <a href={job.url} className="work-card" target="_blank" rel="noreferrer">
                 <div
                   className="work-logo"
                   style={{
@@ -449,10 +469,11 @@ const Home = () => {
                     job.logo
                   )}
                 </div>
-                <div>
+                <div className="flex-1">
                   <h3>{job.company}</h3>
                   <p>{job.description}</p>
                 </div>
+                <span className="open-button">Open</span>
               </a>
             )}
           />
