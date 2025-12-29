@@ -272,6 +272,7 @@ const Home = () => {
       <div className="halo halo-top" />
       <div className="halo halo-bottom" />
 
+      
       <main className="surface">
         <div className="nav-row">
           <nav className="nav-links">
@@ -315,7 +316,7 @@ const Home = () => {
         <div className="flex flex-row justify-between items-center mb-8">
           <div className="listening">
             {song?.isPlaying ? (
-              <div className="flex flex-wrap gap-1">
+              <div className="flex flex-col gap-0.5">
                 <div className="flex items-center gap-2">
                   <FaSpotify className="text-[#1DB954] size-4" />
                   <span className="muted text-200">Listening to</span>
@@ -329,12 +330,12 @@ const Home = () => {
                       {song.title}
                     </a>
                   </strong>
-                </div>
-                <div className="flex items-center">
-                  <span className="muted text-200">by {song.artist}</span>
                   <span className="dancer" aria-label="Playing">
                     🕺
                   </span>
+                </div>
+                <div className="flex items-center gap-2 pl-6">
+                  <span className="muted text-200">by {song.artist}</span>
                 </div>
               </div>
             ) : (
@@ -347,8 +348,8 @@ const Home = () => {
               </>
             )}
           </div>
-          <div className="location-text !mb-0">
-            in {profile.location} <span className="dot green" />
+          <div className="location-text !mb-0 whitespace-nowrap">
+            {profile.location} <span className="dot green" />
           </div>
         </div>
 
