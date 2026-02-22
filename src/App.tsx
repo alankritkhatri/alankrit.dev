@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Home from "./pages/Home";
 import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
+import Links from "./pages/Links";
 import { useLiveViewers } from "./hooks/useLiveViewers";
 import "./App.css";
 
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/links" element={<Links />} />
       </Routes>
       <Analytics />
     </Router>
