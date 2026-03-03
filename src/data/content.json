@@ -2,7 +2,7 @@
   "navLinks": [{ "label": "Home", "href": "#top" }],
   "profile": {
     "name": "Alankrit Khatri",
-    "role": "Software Engineer I at Docstribe AI",
+    "role": "Software Engineer at RevenueHero.io",
     "bio": "Hi I'm Alankrit. Im a software engineer and Builder. I love creative problems. I have strong problem-solving abilities and a high-ownership, impact-driven mindset. Feel free to say hi to connect on my email.",
     "location": "Delhi, India",
     "banner": {
@@ -46,13 +46,13 @@
   ],
   "work": [
     {
-      "company": "Docstribe AI",
-      "description": "Healthcare SaaS platform - Software Engineer I",
-      "url": "https://docstribe.com",
-      "logo": "/docstribe_ai_healthcare_logo.jpeg",
-      "isImage": true,
-      "logoColor": "#ffffff",
-      "logoTextColor": "#000000"
+      "company": "RevenueHero.io",
+      "description": "Revenue acceleration platform - Software Engineer",
+      "url": "https://revenuehero.io",
+      "logo": "R",
+      "isImage": false,
+      "logoColor": "#6C2BD9",
+      "logoTextColor": "#ffffff"
     }
   ],
   "social": [
