@@ -53,6 +53,15 @@
       "isImage": false,
       "logoColor": "#6C2BD9",
       "logoTextColor": "#ffffff"
+    },
+    {
+      "company": "Docstribe",
+      "description": "AI Healthcare platform - Software Engineer",
+      "url": "https://docstribe.com",
+      "logo": "/docstribe_ai_healthcare_logo.jpeg",
+      "isImage": true,
+      "logoColor": "#ffffff",
+      "logoTextColor": "#000000"
     }
   ],
   "social": [
